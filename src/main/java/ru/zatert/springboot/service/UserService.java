@@ -1,4 +1,4 @@
-package ru.zatert.springboot.services;
+package ru.zatert.springboot.service;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,9 +9,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ru.zatert.springboot.entities.Role;
-import ru.zatert.springboot.entities.User;
-import ru.zatert.springboot.repositories.UserRepo;
+import ru.zatert.springboot.entity.Role;
+import ru.zatert.springboot.entity.User;
+import ru.zatert.springboot.repository.UserRepo;
 
 import java.util.Collection;
 import java.util.List;

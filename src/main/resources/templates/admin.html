@@ -35,9 +35,11 @@
 
                 event.preventDefault();
                 let href = $(this).attr('href');
+                alert(href);
                 let text = $(this).text();
                 if(text=='Edit'){
                     $.get(href, function (item){
+                        alert(item.id);
                         $('.myForm #id').val(item.id);
                         $('.myForm #username').val(item.username);
                         $('.myForm #password').val(item.password);

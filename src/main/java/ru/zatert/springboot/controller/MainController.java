@@ -1,12 +1,12 @@
-package ru.zatert.springboot.controllers;
+package ru.zatert.springboot.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import ru.zatert.springboot.entities.User;
-import ru.zatert.springboot.repositories.UserRepo;
-import ru.zatert.springboot.services.UserService;
+import ru.zatert.springboot.entity.User;
+import ru.zatert.springboot.repository.UserRepo;
+import ru.zatert.springboot.service.UserService;
 
 import java.security.Principal;
 import java.util.List;
@@ -71,13 +71,11 @@ public class MainController {
 //        model.addAttribute("list", list);
         return "redirect:/admin";
     }
-
     @GetMapping("/findOne")
     @ResponseBody
     public User findOne(long id) {
         return userService.findById(id);
     }
-
     @PostMapping("/save")
     public String save(User user) {
         userService.save(user);

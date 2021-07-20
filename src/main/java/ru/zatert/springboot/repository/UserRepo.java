@@ -1,9 +1,8 @@
-package ru.zatert.springboot.repositories;
+package ru.zatert.springboot.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-import ru.zatert.springboot.entities.User;
+import ru.zatert.springboot.entity.User;
 
 @Repository
 public interface UserRepo extends JpaRepository<User, Long> {

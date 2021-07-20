@@ -1,4 +1,4 @@
-package ru.zatert.springboot.entities;
+package ru.zatert.springboot.entity;
 
 
 
